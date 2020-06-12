@@ -31,21 +31,23 @@ const setSelectedNavLink = () => {
   document.getElementById(`${sectionScrolls[0].name}Link`).classList.add('selected');
 }
 
-document.addEventListener('scroll', scrollAndResizeHandler);
-window.addEventListener('resize', scrollAndResizeHandler);
+document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener('scroll', scrollAndResizeHandler);
+  window.addEventListener('resize', scrollAndResizeHandler);
 
-document.getElementsByClassName('nav-icon')[0].addEventListener('click', e => {
-  document.getElementsByClassName('nav-icon')[0].classList.toggle('open');
-  document.getElementById('navbar').classList.toggle('shown');
+  document.getElementsByClassName('nav-icon')[0].addEventListener('click', e => {
+    document.getElementsByClassName('nav-icon')[0].classList.toggle('open');
+    document.getElementById('navbar').classList.toggle('shown');
+  });
+
+  document.querySelectorAll('nav ul li').forEach(el =>
+    el.addEventListener('click', function(e){
+    if(document.documentElement.clientWidth < 560) {
+      document.getElementsByClassName('nav-icon')[0].classList.remove('open');
+      document.getElementById('navbar').classList.remove('shown');
+    }
+  }));
+
+  document.getElementById('age').innerHTML = (new Date(new Date() - new Date('1981-01-01')).getFullYear() - 1970);
+  document.getElementById('seniority').innerHTML = (new Date(new Date() - new Date('2003-01-01')).getFullYear() - 1970);
 });
-
-document.querySelectorAll('nav ul li').forEach(el =>
-  el.addEventListener('click', function(e){
-  if(document.documentElement.clientWidth < 560) {
-    document.getElementsByClassName('nav-icon')[0].classList.remove('open');
-    document.getElementById('navbar').classList.remove('shown');
-  }
-}));
-
-document.getElementById('age').innerHTML = (new Date(new Date() - new Date('1981-01-01')).getFullYear() - 1970);
-document.getElementById('seniority').innerHTML = (new Date(new Date() - new Date('2003-01-01')).getFullYear() - 1970);
