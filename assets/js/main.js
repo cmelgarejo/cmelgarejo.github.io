@@ -48,6 +48,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }));
 
-  document.getElementById('age').innerHTML = (new Date(new Date() - new Date('1981-01-01')).getFullYear() - 1970);
   document.getElementById('seniority').innerHTML = (new Date(new Date() - new Date('2003-01-01')).getFullYear() - 1970);
 });
