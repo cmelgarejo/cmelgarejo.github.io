@@ -18,7 +18,6 @@ const scrollAndResizeHandler = (e) => {
   setSelectedNavLink();
   lastWindowWidth = document.documentElement.clientWidth;
 }
-
 const setSelectedNavLink = () => {
   let sections = ['community', 'writing', 'projects', 'education', 'experience', 'introduction'];
   let sectionScrolls = sections.map(v => ({
@@ -30,16 +29,14 @@ const setSelectedNavLink = () => {
   document.querySelectorAll('nav ul li').forEach(e => (e.classList.remove('selected')));
   document.getElementById(`${sectionScrolls[0].name}Link`).classList.add('selected');
 }
-
 document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById('seniority').innerHTML = (new Date(new Date() - new Date('2003-01-01')).getFullYear() - 1970);
   document.addEventListener('scroll', scrollAndResizeHandler);
   window.addEventListener('resize', scrollAndResizeHandler);
-
   document.getElementsByClassName('nav-icon')[0].addEventListener('click', e => {
     document.getElementsByClassName('nav-icon')[0].classList.toggle('open');
     document.getElementById('navbar').classList.toggle('shown');
   });
-
   document.querySelectorAll('nav ul li').forEach(el =>
     el.addEventListener('click', function(e){
     if(document.documentElement.clientWidth < 560) {
@@ -47,6 +44,4 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('navbar').classList.remove('shown');
     }
   }));
-
-  document.getElementById('seniority').innerHTML = (new Date(new Date() - new Date('2003-01-01')).getFullYear() - 1970);
 });
