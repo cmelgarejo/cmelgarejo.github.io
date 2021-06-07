@@ -30,7 +30,7 @@ const setSelectedNavLink = () => {
   document.getElementById(`${sectionScrolls[0].name}Link`).classList.add('selected');
 }
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById('seniority').innerHTML = (new Date(new Date() - new Date('2003-01-01')).getFullYear() - 1970);
+  document.getElementById('seniority').innerHTML = (new Date(new Date() - new Date('2005-01-01')).getFullYear() - 1970);
   document.addEventListener('scroll', scrollAndResizeHandler);
   window.addEventListener('resize', scrollAndResizeHandler);
   document.getElementsByClassName('nav-icon')[0].addEventListener('click', e => {
