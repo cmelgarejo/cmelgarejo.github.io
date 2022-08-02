@@ -696,3 +696,5 @@ footer p {
 footer a {
   font-weight: 400;
 }
+.hidden {
+  display: none;
