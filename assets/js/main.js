@@ -29,7 +29,6 @@ const setSelectedNavLink = () => {
   document.getElementById(`${sectionScrolls[0].name}Link`).classList.add('selected');
 }
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById('seniority').innerHTML = (new Date(new Date() - new Date('2005-01-01')).getFullYear() - 1970);
   document.addEventListener('scroll', scrollAndResizeHandler);
   window.addEventListener('resize', scrollAndResizeHandler);
   document.querySelectorAll('nav ul li').forEach(el =>
