@@ -11,8 +11,9 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="Christian Melgarejo (cmelgarejo), Senior Software Developer since 2004.">
     <meta property="og:image" content="https://avatars0.githubusercontent.com/u/2163649?s=460&amp;v=4">
+    <meta name="theme-color" content="#111c24">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" defer></script>
     <link rel="icon" type="image/png" href="./assets/favicon.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KW48CDYPR3"></script>
@@ -25,6 +26,7 @@
     </script>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="container">
         <header class="col-full">
             <div class="backdrop">
@@ -99,12 +101,22 @@
                     </div>
                 </div>
                 <div class="separator"></div>
+                <p class="eyebrow">Software engineering · Since 2004</p>
                 <h1>
-                    cmelgarejo
+                    Christian Melgarejo
                     <small>Senior Software Developer</small>
                 </h1>
+                <p class="hero-summary">I build resilient digital products from backend architecture to polished
+                    interfaces.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="mailto:christian.melgarejo.bresanovich@gmail.com">Start a conversation</a>
+                    <a class="button button-secondary" href="./assets/cmelgarejo-cv.pdf" target="_blank">View CV</a>
+                </div>
             </div>
-            <nav id="navbar" class="">
+            <nav id="navbar" aria-label="Primary navigation">
+                <a class="nav-brand" href="#introduction" aria-label="Christian Melgarejo, home">
+                    <span>CM</span><strong>cmelgarejo</strong>
+                </a>
                 <ul>
                     <li id="introductionLink"><a href="#introduction">Home</a></li>
                     <li id="experienceLink"><a href="#experience">Experience</a></li>
@@ -114,7 +126,13 @@
                     <li id="certificatesLink"><a href="#certificates">Certificates</a></li>
                 </ul>
             </nav>
+            <button class="nav-toggle" type="button" aria-controls="navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
         </header>
+        <main id="main-content" class="page-content">
         <section class="col-centered container" id="introduction">
             <div class="col-full">
                 <div class="flex-container">
@@ -1108,6 +1126,7 @@
                 </div>
             </div>
         </section>
+        </main>
         <footer class="col-full container">
             <div class="col-centered">
                 <p>
