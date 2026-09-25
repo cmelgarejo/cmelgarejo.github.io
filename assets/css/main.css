@@ -919,6 +919,7 @@ button:focus-visible {
 
 header {
   position: relative;
+  z-index: 1;
   min-height: min(820px, 92vh);
   height: auto;
   overflow: hidden;
