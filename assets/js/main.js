@@ -1,4 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
+let pageEnhancementsInitialized = false;
+
+const runPageEnhancements = () => {
+  if (pageEnhancementsInitialized) return;
+  pageEnhancementsInitialized = true;
+
   const nav = document.getElementById("navbar");
   const navToggle = document.querySelector(".nav-toggle");
   const navLinks = [...nav.querySelectorAll('a[href^="#"]')];
@@ -99,4 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
       { passive: true }
     );
   }
-});
+};
+
+document.addEventListener("DOMContentLoaded", runPageEnhancements);
