@@ -1147,6 +1147,37 @@ nav ul li a.active {
   background: rgba(255, 255, 255, 0.09);
 }
 
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-left: 0.35rem;
+  padding-left: 0.35rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.lang-btn {
+  min-width: 2.1rem;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  color: rgba(255, 253, 248, 0.72);
+  background: transparent;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lang-btn:hover,
+.lang-btn.is-active,
+.lang-btn[aria-pressed="true"] {
+  color: var(--paper-bright);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
 .nav-toggle {
   display: none;
 }
