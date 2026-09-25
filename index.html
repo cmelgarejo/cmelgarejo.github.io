@@ -12,8 +12,17 @@
     <meta property="og:description" content="Christian Melgarejo (cmelgarejo), Senior Software Developer since 2004.">
     <meta property="og:image" content="https://avatars0.githubusercontent.com/u/2163649?s=460&amp;v=4">
     <meta name="theme-color" content="#111c24">
-    <link rel="stylesheet" href="./assets/css/main.css?v=20260925-hero-contact">
-    <script src="./assets/js/main.js" defer></script>
+    <script>
+        try {
+            if (localStorage.getItem("portfolio-language") === "es") {
+                document.documentElement.lang = "es";
+                document.documentElement.dataset.languageLoading = "es";
+            }
+        } catch (_) {}
+    </script>
+    <link rel="stylesheet" href="./assets/css/main.css?v=20260925-i18n">
+    <script src="./assets/js/translations.js?v=20260925-i18n" defer></script>
+    <script src="./assets/js/main.js?v=20260925-i18n" defer></script>
     <link rel="icon" type="image/png" href="./assets/favicon.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KW48CDYPR3"></script>
@@ -125,6 +134,10 @@
                     <li id="writingLink"><a href="#writing">Writing</a></li>
                     <li id="certificatesLink"><a href="#certificates">Certificates</a></li>
                 </ul>
+                <div class="language-switcher" role="group" aria-label="Language">
+                    <button type="button" data-language="en" aria-label="Switch to English" aria-pressed="true">EN</button>
+                    <button type="button" data-language="es" aria-label="Switch to Spanish" aria-pressed="false">ES</button>
+                </div>
             </nav>
             <button class="nav-toggle" type="button" aria-controls="navbar" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -137,7 +150,7 @@
             <div class="col-full">
                 <div class="flex-container">
                     <div class="flex-media-obj">
-                        <img alt="woof!" src="https://avatars0.githubusercontent.com/u/2163649?s=460&amp;v=4"
+                        <img alt="Christian Melgarejo profile photo" src="https://avatars0.githubusercontent.com/u/2163649?s=460&amp;v=4"
                             class="profile-picture">
                     </div>
                     <div class="flex-fill">
@@ -885,6 +898,66 @@
             <div class="col-full">
                 <h2>Projects &amp; Open Source</h2>
                 <div class="flex-container">
+                    <div class="flex-media-logo"></div>
+                    <div class="flex-title">
+                        <h3>
+                            <a rel="noreferrer" href="https://github.com/LoopContext/heapguard" target="_blank">heapguard</a>
+                            <small>Go · MIT License · LoopContext</small>
+                        </h3>
+                    </div>
+                </div>
+                <div class="content-left-offset">
+                    <p>
+                        A bounded, observable, and optionally adaptive object pool for Go with strict idle-object
+                        retention limits, runtime tuning, and detailed metrics.
+                    </p>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-media-logo"></div>
+                    <div class="flex-title">
+                        <h3>
+                            <a rel="noreferrer" href="https://github.com/LoopContext/msgcat" target="_blank">msgcat</a>
+                            <small>Go · MIT License · LoopContext</small>
+                        </h3>
+                    </div>
+                </div>
+                <div class="content-left-offset">
+                    <p>
+                        A lightweight internationalization message catalog for Go APIs and error handling, with YAML
+                        catalogs, context-based language resolution, named templates, and localized error wrapping.
+                    </p>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-media-logo"></div>
+                    <div class="flex-title">
+                        <h3>
+                            <a rel="noreferrer" href="https://github.com/LoopContext/anycase" target="_blank">anycase</a>
+                            <small>Go · MIT License · LoopContext</small>
+                        </h3>
+                    </div>
+                </div>
+                <div class="content-left-offset">
+                    <p>
+                        A Go package for converting strings between snake_case, kebab-case, CamelCase, lowerCamelCase,
+                        and custom delimited formats.
+                    </p>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-media-logo"></div>
+                    <div class="flex-title">
+                        <h3>
+                            <a rel="noreferrer" href="https://github.com/LoopContext/checkmail" target="_blank">checkmail</a>
+                            <small>Go · MIT License · LoopContext</small>
+                        </h3>
+                    </div>
+                </div>
+                <div class="content-left-offset">
+                    <p>
+                        A Go package for validating email format, checking domain validity, and testing whether a
+                        mailbox host recognizes a user.
+                    </p>
+                </div>
+                <div class="flex-container">
                     <div class="flex-media-logo">
                         <a rel="noreferrer" href="https://www.myscanapp.com" target="_blank">
                             <img alt="myscanapp.com" src="./assets/img/myscanapp.jpg">
@@ -1089,7 +1162,7 @@
                 <div class="container card-container">
                     <a class="card" target="_blank" rel="noreferrer"
                         href="https://medium.com/@cmelgarejo.dev/creating-an-opinionated-gql-server-part1-8fad071e525f">
-                        <img alt="media" class="section media" src="./assets/img/w1.png">
+                        <img alt="Article cover for Creating an Opinionated Go GQL Server" class="section media" src="./assets/img/w1.png">
                         <div class="content">
                             <h3>
                                 Creating an Opinionated Go GQL Server
@@ -1106,7 +1179,7 @@
                 <div class="container card-container">
                     <a class="card" target="_blank" rel="noreferrer"
                         href="https://certificates.emeritus.org/3934cf46-04ab-4645-ba0c-b30228e8de14">
-                        <img alt="media" class="section media"
+                        <img alt="MIT xPro Fullstack Developer MERN certificate" class="section media"
                             src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/46192378">
                         <div class="content">
                             <h3>

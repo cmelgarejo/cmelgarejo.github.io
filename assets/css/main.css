@@ -847,6 +847,10 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+html[data-language-loading] body {
+  visibility: hidden;
+}
+
 *, html {
   font-family: inherit;
   line-height: 1.55;
@@ -1147,6 +1151,39 @@ nav ul li a.active {
   background: rgba(255, 255, 255, 0.09);
 }
 
+.language-switcher {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 0.2rem;
+  padding: 0.2rem;
+  margin-left: 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+}
+
+.language-switcher button {
+  min-width: 32px;
+  min-height: 30px;
+  padding: 0.25rem 0.45rem;
+  color: rgba(255, 253, 248, 0.68);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.language-switcher button:hover {
+  color: var(--paper-bright);
+}
+
+.language-switcher button.active {
+  color: var(--ink);
+  background: var(--cyan);
+}
+
 .nav-toggle {
   display: none;
 }
@@ -1423,6 +1460,12 @@ section li {
   line-height: 1.1;
 }
 
+.entry-card h3 a,
+.entry-card h3 a:link,
+.entry-card h3 a:visited {
+  color: inherit;
+}
+
 .flex-title h3 small {
   margin-top: 0.45rem;
   color: var(--coral-dark);
@@ -1562,6 +1605,10 @@ footer p {
   nav ul li a:visited {
     padding-inline: 0.45rem;
     font-size: 0.67rem;
+  }
+
+  .language-switcher {
+    margin-left: 0.25rem;
   }
 
   #introduction .col-full {
