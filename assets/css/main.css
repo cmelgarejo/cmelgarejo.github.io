@@ -1347,6 +1347,7 @@ section li {
 
 #codersrank {
   counter-increment: none;
+  isolation: isolate;
   padding-top: 0;
   padding-bottom: 0;
 }
