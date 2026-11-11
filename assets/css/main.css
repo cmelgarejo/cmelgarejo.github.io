@@ -705,9 +705,30 @@ header {
   text-wrap: balance;
 }
 
+.hero,
+.title,
+.title h1,
+.title h1 small,
+.hero-summary,
+h1,
+h2,
+h3,
+.identity,
+.subhead,
+.stack-label,
+.skill-list,
+.fact-list,
+nav,
+.button {
+  hyphens: none;
+  -webkit-hyphens: none;
+  word-break: normal;
+}
+
 .hero-summary {
   max-width: 630px;
   margin: 2rem 0 0;
+  overflow-wrap: normal;
   color: var(--on-ink-soft);
   font-size: clamp(1.05rem, 2vw, 1.25rem);
   line-height: 1.6;
@@ -1470,7 +1491,7 @@ footer p {
   }
 
   h2 {
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
   }
 
   .entry-card .flex-container {
