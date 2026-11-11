@@ -103,8 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const nav = document.getElementById("navbar");
   const navToggle = document.querySelector(".nav-toggle");
-  const navLinks = [...nav.querySelectorAll('a[href^="#"]')];
-  const motionAllowed = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const navLinks = [...nav.querySelectorAll('ul a[href^="#"]')];
 
   const closeMenu = () => {
     nav.classList.remove("menu-open");
@@ -116,10 +115,10 @@ document.addEventListener("DOMContentLoaded", () => {
     navToggle.setAttribute("aria-expanded", String(open));
   });
 
-  navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+  nav.querySelectorAll('a[href^="#"]').forEach((link) => link.addEventListener("click", closeMenu));
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
+    if (event.key === "Escape" && nav.classList.contains("menu-open")) {
       closeMenu();
       navToggle.focus();
     }
@@ -162,11 +161,11 @@ document.addEventListener("DOMContentLoaded", () => {
     children.forEach((heading) => {
       if (!heading.classList.contains("flex-container")) return;
       const details = heading.nextElementSibling;
-      if (!details?.classList.contains("content-left-offset")) return;
       const card = document.createElement("article");
-      card.className = "entry-card reveal";
+      card.className = "entry-card";
       heading.before(card);
-      card.append(heading, details);
+      if (details?.classList.contains("content-left-offset")) card.append(heading, details);
+      else card.append(heading);
     });
   };
 
@@ -175,39 +174,4 @@ document.addEventListener("DOMContentLoaded", () => {
     if (section) groupEntries(section);
   });
   queueNavUpdate();
-
-  const revealItems = document.querySelectorAll(
-    "section > .col-full > h2, .entry-card, .card-container .card"
-  );
-
-  if (motionAllowed && "IntersectionObserver" in window) {
-    document.documentElement.classList.add("motion-ready");
-    const revealObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        });
-      },
-      { rootMargin: "0px 0px -8%", threshold: 0.08 }
-    );
-    revealItems.forEach((item) => {
-      item.classList.add("reveal");
-      revealObserver.observe(item);
-    });
-  }
-
-  if (motionAllowed && window.matchMedia("(pointer: fine)").matches) {
-    const hero = document.querySelector("header .title");
-    window.addEventListener(
-      "pointermove",
-      (event) => {
-        const x = (event.clientX / window.innerWidth - 0.5) * 8;
-        const y = (event.clientY / window.innerHeight - 0.5) * 8;
-        hero.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-      },
-      { passive: true }
-    );
-  }
 });

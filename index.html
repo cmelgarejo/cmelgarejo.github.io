@@ -20,9 +20,9 @@
             }
         } catch (_) {}
     </script>
-    <link rel="stylesheet" href="./assets/css/main.css?v=20260925-i18n">
-    <script src="./assets/js/translations.js?v=20260925-i18n" defer></script>
-    <script src="./assets/js/main.js?v=20260925-i18n" defer></script>
+    <link rel="stylesheet" href="./assets/css/main.css?v=20261111-impeccable">
+    <script src="./assets/js/translations.js?v=20261111-impeccable" defer></script>
+    <script src="./assets/js/main.js?v=20261111-impeccable" defer></script>
     <link rel="icon" type="image/png" href="./assets/favicon.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KW48CDYPR3"></script>
@@ -33,95 +33,12 @@
 
         gtag('config', 'G-KW48CDYPR3');
     </script>
+</head>
 
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="container">
-        <header class="col-full">
-            <div class="backdrop">
-
-            </div>
-            <div class="backdrop filtered">
-            </div>
-            <div class="title">
-                <div class="laptop">
-                    <div class="monitor">
-                        <div class="camera"></div>
-                        <div class="mic"></div>
-                        <div class="screen-bg">
-                            <div class="window">
-                                <div class="circle red"></div>
-                                <div class="circle yellow"></div>
-                                <div class="circle green"></div>
-                                <div class="area">
-                                    <span class="code short key"></span>
-                                    <span class="code name"></span>
-                                    <span class="code short"></span><br>
-                                    <span class="code short key medium"></span>
-                                    <span class="code val"></span><br>
-                                    <span class="code offset"></span>
-                                    <span class="code val long"></span><br>
-                                    <span class="code offset key short"></span>
-                                    <span class="code semilong"></span>
-                                    <span class="code name"></span>
-                                    <span class="code name semilong"></span><br>
-                                    <span class="code offset double key medium"></span>
-                                    <span class="code name"></span><br>
-                                    <span class="code offset long"></span>
-                                    <span class="code val short"></span>
-                                    <span class="code name medium"></span><br><br>
-                                    <span class="code val comment long"></span>
-                                    <span class="code val comment"></span><br>
-                                    <span class="code name medium"></span>
-                                    <span class="code"></span>
-                                    <span class="code key short"></span><br>
-                                    <span class="code val"></span>
-                                    <span class="code name long"></span><br>
-                                    <span class="code key"></span>
-                                    <span class="code short"></span>
-                                    <span class="code name semilong"></span><br>
-                                    <span class="code short key offset"></span>
-                                    <span class="code val"></span><br>
-                                    <span class="code medium"></span>
-                                    <span class="code long name"></span>
-                                    <span class="code val short"></span>
-                                    <span class="code key medium"></span>
-                                    <span class="code name"></span><br>
-                                    <span class="code semilong"></span>
-                                    <span class="code val"></span>
-                                    <span class="code name long"></span><br>
-                                    <span class="code name long offset"></span>
-                                    <span class="code val"></span><br>
-                                    <span class="code medium offset double"></span>
-                                    <span class="code name long"></span><br>
-                                    <span class="code key short offset"></span>
-                                    <span class="code name"></span>
-                                    <span class="code val semilong"></span><br>
-                                    <span class="code name"></span>
-                                    <span class="code medium"></span>
-                                    <span class="code long val"></span>
-                                    <span class="code short"></span><br>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="base">
-                        <div class="pad"></div>
-                    </div>
-                </div>
-                <div class="separator"></div>
-                <p class="eyebrow">Software engineering · Since 2004</p>
-                <h1>
-                    Christian Melgarejo
-                    <small>Senior Software Developer</small>
-                </h1>
-                <p class="hero-summary">I build resilient digital products from backend architecture to polished
-                    interfaces.</p>
-                <div class="hero-actions">
-                    <a class="button button-primary" href="mailto:christian.melgarejo.bresanovich@gmail.com">Start a conversation</a>
-                    <a class="button button-secondary" href="./assets/latest-cmelgarejo-cv.pdf" target="_blank">View CV</a>
-                </div>
-            </div>
+        <header>
             <nav id="navbar" aria-label="Primary navigation">
                 <a class="nav-brand" href="#introduction" aria-label="Christian Melgarejo, home">
                     <span>CM</span><strong>cmelgarejo</strong>
@@ -145,7 +62,23 @@
                 <span aria-hidden="true"></span>
             </button>
         </header>
-        <main id="main-content" class="page-content">
+        <main id="main-content" tabindex="-1">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="backdrop" aria-hidden="true"></div>
+            <div class="backdrop filtered" aria-hidden="true"></div>
+            <div class="title">
+                <h1 id="hero-title">
+                    Christian Melgarejo
+                    <small>Senior Software Developer since 2004</small>
+                </h1>
+                <p class="hero-summary">I build resilient digital products from backend architecture to polished interfaces.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="mailto:christian.melgarejo.bresanovich@gmail.com">Start a conversation</a>
+                    <a class="button button-secondary" href="./assets/latest-cmelgarejo-cv.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
+                </div>
+            </div>
+        </section>
+        <div class="page-content">
         <section class="col-centered container" id="introduction">
             <div class="col-full">
                 <div class="flex-container">
@@ -154,16 +87,16 @@
                             class="profile-picture">
                     </div>
                     <div class="flex-fill">
-                        <h1>
+                        <p class="identity">
                             Christian Melgarejo
-                            <small><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            <small><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" style="margin-right: 8px;">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>Paraguay</small>
-                        </h1>
-                        <a href="mailto:christian.melgarejo.bresanovich@gmail.com" target="_blank" class="social-icon" title="Email"><svg
+                        </p>
+                        <a href="mailto:christian.melgarejo.bresanovich@gmail.com" class="social-icon" title="Email" aria-label="Email"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -171,8 +104,7 @@
                                 </path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg></a>
-                        <a rel="noreferrer" href="https://github.com/cmelgarejo" target="_blank" class="social-icon"
-                            title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        <a rel="noreferrer" href="https://github.com/cmelgarejo" target="_blank" class="social-icon" title="GitHub" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path
@@ -180,7 +112,7 @@
                                 </path>
                             </svg></a>
                         <a rel="noreferrer" href="https://www.linkedin.com/in/cmelgarejo" target="_blank"
-                            class="social-icon hidden" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="social-icon hidden" title="LinkedIn" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg"
                                 width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path
@@ -190,7 +122,7 @@
                                 <circle cx="4" cy="4" r="2"></circle>
                             </svg></a>
                         <a rel="noreferrer" href="https://stackoverflow.com/users/3348187/cmelgarejo?tab=profile"
-                            target="_blank" class="social-icon" title="Stack Overflow"><svg
+                            target="_blank" class="social-icon" title="Stack Overflow" aria-label="Stack Overflow"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 511.627 511.627"
                                 fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -203,33 +135,31 @@
                             </svg></a>
                     </div>
                 </div>
-                <h2>Introduction</h2>
+                <h2>About</h2>
                 <p>
-                    I'm Christian Melgarejo, a results-driven software developer since the year
-                    <span id="seniority">2004</span>, delivering quality, adaptable, and sustainable
-                    code using best practices and suitable design patterns. Proven track record of
-                    building high availability, scalable platforms from scratch.
+                    Since 2004 I have written adaptable, maintainable software and built highly available, scalable platforms from scratch.
                 </p>
-                <p><strong>Technologies I enjoy working with:</strong></p>
-                <ul>
-                    <li>HTML/CSS — ★★★★★</li>
-                    <li>JavaScript — ★★★★★</li>
-                    <li>PostgreSQL — ★★★★★</li>
-                    <li>Go — ★★★★☆</li>
-                    <li>Typescript — ★★★★☆</li>
-                    <li>NodeJS — ★★★★☆</li>
-                    <li>Ruby — ★★★★☆</li>
-                    <li>.NET (C#) — ★★★★☆</li>
-                    <li>MySQL — ★★★★☆</li>
-                    <li>Microsoft SQL Server — ★★★★☆</li>
-                    <li>Elixir — ★★★☆☆</li>
-                    <li>C++ — ★★★☆☆</li>
-                    <li>mongo — ★★★☆☆</li>
+                <h3 class="subhead">Technologies</h3>
+                <ul class="skill-list">
+                    <li><span class="skill-name">HTML/CSS</span> <span class="skill-level">Expert</span></li>
+                    <li><span class="skill-name">JavaScript</span> <span class="skill-level">Expert</span></li>
+                    <li><span class="skill-name">PostgreSQL</span> <span class="skill-level">Expert</span></li>
+                    <li><span class="skill-name">Go</span> <span class="skill-level">Advanced</span></li>
+                    <li><span class="skill-name">TypeScript</span> <span class="skill-level">Advanced</span></li>
+                    <li><span class="skill-name">Node.js</span> <span class="skill-level">Advanced</span></li>
+                    <li><span class="skill-name">Ruby</span> <span class="skill-level">Advanced</span></li>
+                    <li><span class="skill-name">.NET (C#)</span> <span class="skill-level">Advanced</span></li>
+                    <li><span class="skill-name">MySQL</span> <span class="skill-level">Advanced</span></li>
+                    <li><span class="skill-name">Microsoft SQL Server</span> <span class="skill-level">Advanced</span></li>
+                    <li><span class="skill-name">Elixir</span> <span class="skill-level">Intermediate</span></li>
+                    <li><span class="skill-name">C++</span> <span class="skill-level">Intermediate</span></li>
+                    <li><span class="skill-name">MongoDB</span> <span class="skill-level">Intermediate</span></li>
                 </ul>
             </div>
         </section>
         <section class="col-centered container" id="codersrank">
             <div class="col-full">
+                <h2 class="sr-only">CodersRank</h2>
                 <codersrank-widget username="cmelgarejo" layout="horizontal" badges="3"></codersrank-widget>
             </div>
         </section>
@@ -240,7 +170,7 @@
                     <div class="flex-media-logo"></div>
                     <div class="flex-title">
                         <h3>
-                            Full stack developer
+                            Full-Stack Developer
                             <small>Heal.me</small>
                             <small>Apr 2026 - Current · Remote</small>
                         </h3>
@@ -249,14 +179,9 @@
                 <div class="content-left-offset">
                     <p>Project: <a rel="noreferrer" href="https://heal.me" target="_blank">Heal.me</a></p>
                     <p>
-                        Full-stack engineer at Heal.me, the platform that helps wellness practitioners run their
-                        practice: booking, payments, client management, and custom websites. I own features end-to-end
-                        across Rails, React/TypeScript, and GraphQL, and also handle deployments, production ops, and
-                        the third-party integrations that keep the product moving (payments, calendars, messaging, and
-                        more). I leverage AI tooling heavily in day-to-day work, pairing with AI modern agent frameworks
-                        to ship faster without sacrificing quality.
+                        Full-stack engineer at Heal.me, the platform that helps wellness practitioners run their practice: booking, payments, client management, and custom websites. I own features end to end across Rails, React/TypeScript, and GraphQL, and I handle deployments, production operations, and the third-party integrations that keep the product moving (payments, calendars, messaging, and more). I use AI tools every day, including modern agent frameworks, to ship faster without giving up quality.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Ruby on Rails</li>
                         <li>React</li>
@@ -270,7 +195,7 @@
                     <div class="flex-media-logo"></div>
                     <div class="flex-title">
                         <h3>
-                            Full stack developer
+                            Full-Stack Developer
                             <small>Tram Case</small>
                             <small>Aug 2025 - Apr 2026 · Remote</small>
                         </h3>
@@ -279,15 +204,13 @@
                 <div class="content-left-offset">
                     <p>Project: LawOS — <a rel="noreferrer" href="https://mendozafirm.tramcase.com" target="_blank">mendozafirm.tramcase.com</a></p>
                     <p>
-                        Contributed to TramCase, a multi-tenant legal case management platform with RBAC, a client
-                        portal, and telephony integrations, building features on Django, PostgreSQL, React, with a
-                        strong focus on tenant isolation and automated testing and AI tooling.
+                        I contributed to TramCase, a multi-tenant legal case-management platform with RBAC, a client portal, and telephony integrations. I built features with Django, PostgreSQL, and React, focusing on tenant isolation, automated testing, and AI tooling.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Python</li>
                         <li>ReactJS</li>
-                        <li>Postgresql</li>
+                        <li>PostgreSQL</li>
                         <li>AWS</li>
                     </ul>
                 </div>
@@ -304,11 +227,9 @@
                 <div class="content-left-offset">
                     <p>Project: <a rel="noreferrer" href="https://joguapp.com" target="_blank">Joguapp</a></p>
                     <p>
-                        Tasked to develop a NodeJS and Go based services to manage e-commerce focused service that
-                        integrates with a mobile app, a back office app for managing all the posts, users, messages in
-                        app, front end ReactJS to manage all the interactions.
+                        I built Node.js and Go services for an e-commerce product. They connect a mobile app, a back office for posts, users, and in-app messages, and a ReactJS frontend for those interactions.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Go</li>
                         <li>NodeJS</li>
@@ -334,11 +255,11 @@
                 <div class="content-left-offset">
                     <p>Project: GameOn Live Fantasy — <a rel="noreferrer" href="https://gameon.app" target="_blank">gameon.app</a></p>
                     <ul>
-                        <li>Creating and maintaining API and microservices both Go and Python based.</li>
-                        <li>Architecture new and existing features for the live fantasy app &amp; backoffice pages</li>
-                        <li>Implementing new 3rd party API integrations</li>
+                        <li>Built and maintained Go and Python APIs and microservices.</li>
+                        <li>Architected new and existing features for the live fantasy app and back office.</li>
+                        <li>Implemented new third-party API integrations.</li>
                     </ul>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Go</li>
                         <li>NodeJS</li>
@@ -366,10 +287,10 @@
                     <p>Project: <a rel="noreferrer" href="https://app.digitmint.eu" target="_blank">Digit Mint</a></p>
                     <ul>
                         <li>Contributed to the development of our advanced platform, supporting DMA (Double Materiality Assessment), LCA (Life Cycle Assessment), and ESRS/CSRD (European Sustainability Reporting Standards / Corporate Sustainability Reporting Directive - CSRD).</li>
-                        <li>Architecture new features and implementations</li>
-                        <li>In charge of DevOps on google cloud platform</li>
+                        <li>Architected new features and implementations.</li>
+                        <li>Ran DevOps on Google Cloud Platform.</li>
                     </ul>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Go</li>
                         <li>NodeJS</li>
@@ -382,7 +303,7 @@
                     <div class="flex-media-logo"></div>
                     <div class="flex-title">
                         <h3>
-                            Individual contributor (part time)
+                            Individual Contributor (part-time)
                             <small>Hyfe.ai</small>
                             <small>Sep 2023 - Feb 2024 · Remote</small>
                         </h3>
@@ -391,10 +312,10 @@
                 <div class="content-left-offset">
                     <p>Project: CoughPro Insights Dashboard — <a rel="noreferrer" href="https://hyfe.ai" target="_blank">hyfe.ai</a></p>
                     <ul>
-                        <li>Developed a NextJS frontend dashboard with graphs and custom components to represent all the cough information picked up by the state of the art app with a ML model to detect different types of coughs from the user.</li>
-                        <li>Created and implemented APIs and 3rd party integrations with Go microservices</li>
+                        <li>Built a Next.js dashboard with charts and custom components for the cough data captured by the app. The app uses an ML model to detect different types of coughs.</li>
+                        <li>Created APIs and third-party integrations with Go microservices.</li>
                     </ul>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>NodeJS</li>
                         <li>NextJS</li>
@@ -419,10 +340,10 @@
                 <div class="content-left-offset">
                     <p>Project: <a rel="noreferrer" href="https://cuely.ai" target="_blank">Cuely</a></p>
                     <ul>
-                        <li>Developed a Go based service to manage a wellbeing focused gamified service that integrates with Slack, Microsoft Teams.</li>
-                        <li>Created a web-app (ReactJS) to manage all the interactions, configure options and view reports.</li>
+                        <li>Built a Go service for a wellbeing product with game mechanics, integrated with Slack and Microsoft Teams.</li>
+                        <li>Built a ReactJS web app to manage interactions, configure options, and view reports.</li>
                     </ul>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Go</li>
                         <li>ReactJS</li>
@@ -438,7 +359,7 @@
                     </div>
                     <div class="flex-title">
                         <h3>
-                            Senior Full Stack Developer
+                            Senior Full-Stack Developer
                             <small>Tyk.io</small>
                             <small>Jul 2021 - Apr 2022 · Remote</small>
                         </h3>
@@ -447,11 +368,11 @@
                 <div class="content-left-offset">
                     <p>Project: Developer Portal (Backend and Frontend) — <a rel="noreferrer" href="https://tyk.io/docs/tyk-developer-portal/" target="_blank">tyk.io/docs/tyk-developer-portal</a></p>
                     <ul>
-                        <li>Developed internal and client facing software tools for the <a rel="noreferrer" href="https://tyk.io" target="_blank">tyk.io</a> OSS gateway, web portal to manage IdP (Identity Providers) and the tyk.io gateway interactions.</li>
-                        <li>Helped on the development and integration of microservices and 1st &amp; 3rd party external services</li>
-                        <li>Extending and developing open source CMS software: QOR <a rel="noreferrer" href="https://getqor.com/en" target="_blank">getqor.com</a></li>
+                        <li>Developed internal and client-facing tools for the open-source gateway, including a web portal to manage identity providers (IdP) and gateway interactions. <a rel="noreferrer" href="https://tyk.io" target="_blank">tyk.io</a></li>
+                        <li>Helped develop and integrate microservices and first- and third-party external services.</li>
+                        <li>Extended and developed the open-source CMS QOR. <a rel="noreferrer" href="https://getqor.com/en" target="_blank">getqor.com</a></li>
                     </ul>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Go</li>
                         <li>HTML/CSS</li>
@@ -467,23 +388,21 @@
                     </div>
                     <div class="flex-title">
                         <h3>
-                            Lead Full Stack Developer
+                            Lead Full-Stack Developer
                             <small>AddinexTech</small>
                             <small>Apr 2021 - Jul 2021 · Remote</small>
                         </h3>
                     </div>
                 </div>
                 <div class="content-left-offset">
-                    <p>Project: Addinex System (Backend to Frontend - Some features of the ReactNative App)</p>
-                    <p>Responsible for the development of the architecture and design (Back and Front) of the system that
-                        manages the Addinex patented low-cost medicine dispensing system to prevent prescription drug
-                        misuse with:</p>
+                    <p>Project: Addinex System (backend to frontend, including some React Native app features)</p>
+                    <p>I led architecture and design, backend and frontend, for the Addinex patented low-cost medicine dispenser, built to prevent prescription-drug misuse through:</p>
                     <ul>
                         <li>password-protected dosage access</li>
                         <li>real-time patient education and excess medication destruction</li>
                         <li>data feedback on actual usage patterns.</li>
                     </ul>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>NodeJS</li>
                         <li>NestJS</li>
@@ -508,10 +427,9 @@
                 <div class="content-left-offset">
                     <p>Project: AccessIntegra Backend and Portal</p>
                     <p>
-                        Backend development, database and data models, integrations of 1st &amp; 3rd party APIs, design
-                        and development several microservices, TDD and Production deployment.
+                        I handled backend development, the database and data models, first- and third-party API integrations, several microservices, test-driven development, and production deployment.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Go</li>
                         <li>OpenAPI Spec</li>
@@ -525,7 +443,7 @@
                     </div>
                     <div class="flex-title">
                         <h3>
-                            Lead Full Stack Developer
+                            Lead Full-Stack Developer
                             <small>On Campus Marketing</small>
                             <small>Oct 2018 - Oct 2020 · Remote</small>
                         </h3>
@@ -534,12 +452,9 @@
                 <div class="content-left-offset">
                     <p>Project: <a rel="noreferrer" href="https://portal.ocmhub.com" target="_blank">OCM Portal</a> | <a rel="noreferrer" href="https://ocm.com" target="_blank">OCM website</a></p>
                     <p>
-                        Architecture design, database and data models, ETL from legacy systems, integration of 1st and
-                        3rd party APIs, designed the architecture of the services, took the mantle of team lead of the
-                        back office services, moving the client facing site from ASP.NET MVC to Go backend - ReactJS
-                        Frontend site.
+                        I designed the architecture, database, and data models, ran ETL from legacy systems, and integrated first- and third-party APIs. I led the back-office services team and moved the client-facing site from ASP.NET MVC to a Go backend and a ReactJS frontend.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Go</li>
                         <li>ReactJS</li>
@@ -555,7 +470,7 @@
                     </div>
                     <div class="flex-title">
                         <h3>
-                            Senior Full Stack Developer
+                            Senior Full-Stack Developer
                             <small>uTu.ai</small>
                             <small>Aug 2017 - Oct 2018 · Remote</small>
                         </h3>
@@ -564,7 +479,7 @@
                 <div class="content-left-offset">
                     <p>Project: UTU.ai portal - Machine Learning Marketplace — <a rel="noreferrer" href="https://utu.ai" target="_blank">utu.ai</a></p>
                     <p>In charge of the frontend development of the marketplace, connection to 1st and 3rd party APIs.</p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Go</li>
                         <li>ReactJS</li>
@@ -578,7 +493,7 @@
                     <div class="flex-media-logo"></div>
                     <div class="flex-title">
                         <h3>
-                            Full Stack Developer
+                            Full-Stack Developer
                             <small>AgilityFeat</small>
                             <small>Feb 2017 - Aug 2017 · Remote</small>
                         </h3>
@@ -587,10 +502,9 @@
                 <div class="content-left-offset">
                     <p>Project: Workbox invoice and payment platform — <a rel="noreferrer" href="https://workbox.company/" target="_blank">workbox.company</a></p>
                     <p>
-                        Worked in the frontend of Workbox time tracker and invoice generating app. In charge of the
-                        frontend development and integrating the backend microservices.
+                        I worked on the frontend of the Workbox time tracker and invoicing app, and I integrated the backend microservices.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Node.js</li>
                         <li>React.js</li>
@@ -603,7 +517,7 @@
                     <div class="flex-media-logo"></div>
                     <div class="flex-title">
                         <h3>
-                            Senior Full Stack Developer
+                            Senior Full-Stack Developer
                             <small>Nexoos Paraguay</small>
                             <small>Jun 2016 - Feb 2017 · Asunción, Paraguay</small>
                         </h3>
@@ -612,11 +526,9 @@
                 <div class="content-left-offset">
                     <p>Project: Nexoos Paraguay — <a rel="noreferrer" href="https://www.nexoos.com.py" target="_blank">nexoos.com.py</a> | <a rel="noreferrer" href="https://nexoos.com.br" target="_blank">nexoos.com.br</a></p>
                     <p>
-                        A Fintech platform helps small and medium sized businesses acquire fundraising with lower
-                        interest rates than traditional credit lenders such as banks and brokerage houses. Integrating
-                        third party APIs, working with Ruby on Rails on the Nexoos system.
+                        Nexoos is a fintech platform that helps small and medium-sized businesses raise funds at lower interest rates than banks and brokerage houses. I integrated third-party APIs and worked in Ruby on Rails on the Nexoos system.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Ruby on Rails</li>
                         <li>HTML/CSS</li>
@@ -629,7 +541,7 @@
                     <div class="flex-media-logo"></div>
                     <div class="flex-title">
                         <h3>
-                            Full Stack Engineer
+                            Full-Stack Engineer
                             <small>EDGE S.A.</small>
                             <small>Dec 2012 - Jun 2016 · Asunción, Paraguay</small>
                         </h3>
@@ -638,12 +550,9 @@
                 <div class="content-left-offset">
                     <p>Project: Edge Mobile Ideas Gateway — <a rel="noreferrer" href="https://www.edgeamg.com/platform" target="_blank">edgeamg.com/platform</a></p>
                     <p>
-                        A telecommunications operator's data center and gatekeeper SMS, to handle subscriptions and
-                        purchases through various channels, and to charge users for content among other operations,
-                        building Windows Server services to sync data via SMPP with the carrier and the content
-                        providers. Performed as lead developer in .NET technologies and small mobile apps.
+                        A telecommunications operator's data center and SMS gateway. It handles subscriptions and purchases across channels, and charges users for content, among other operations. I built Windows Server services that sync data over SMPP with the carrier and the content providers, and I was the lead developer for the .NET work and the small mobile apps.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>.NET</li>
                         <li>C#</li>
@@ -660,7 +569,7 @@
                     <div class="flex-media-logo"></div>
                     <div class="flex-title">
                         <h3>
-                            Full Stack Developer
+                            Full-Stack Developer
                             <small>NUCLEO S.A.</small>
                             <small>Dec 2010 - Dec 2012 · Asunción, Paraguay</small>
                         </h3>
@@ -669,11 +578,9 @@
                 <div class="content-left-offset">
                     <p>Project: Personal S.A. Website and VAS services — <a rel="noreferrer" href="https://www.personal.com.py" target="_blank">personal.com.py</a></p>
                     <p>
-                        Full stack development, R&amp;D of new technologies and maintenance of VAS (Value Aggregated
-                        Services) ranging from USSD menus and interactions, to 1st and 3rd party API integrations for
-                        the telecommunication company Telecom Personal NUCLEO S.A.
+                        Full-stack development, research, and maintenance of VAS (Value Added Services) for Telecom Personal NUCLEO S.A., from USSD menus and interactions to first- and third-party API integrations.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>.NET</li>
                         <li>C#</li>
@@ -687,7 +594,7 @@
                     <div class="flex-media-logo"></div>
                     <div class="flex-title">
                         <h3>
-                            Full Stack Developer
+                            Full-Stack Developer
                             <small>Rastreo Paraguay S.A.</small>
                             <small>Nov 2009 - Dec 2010 · Asunción, Paraguay</small>
                         </h3>
@@ -696,7 +603,7 @@
                 <div class="content-left-offset">
                     <p>Project: AVL system and website — <a rel="noreferrer" href="https://www.rastreo.com.py" target="_blank">rastreo.com.py</a></p>
                     <p>Development of the fleet management web application, integration with diverse GPS and car alarm units.</p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>.NET</li>
                         <li>C#</li>
@@ -710,7 +617,7 @@
                     <div class="flex-media-logo"></div>
                     <div class="flex-title">
                         <h3>
-                            Full Stack Developer
+                            Full-Stack Developer
                             <small>NOA Group LTD.</small>
                             <small>Jan 2007 - Nov 2009 · San Pedro Sula, Honduras</small>
                         </h3>
@@ -719,11 +626,9 @@
                 <div class="content-left-offset">
                     <p>Project: Smart city systems integration — <a rel="noreferrer" href="https://www.noa-group.net/smart-city" target="_blank">noa-group.net/smart-city</a></p>
                     <p>
-                        At NOA Investment &amp; International trade worked in a Smart City project for the city of
-                        Puerto Cortés (Honduras) that integrated and centralized software to connect CCTV cameras,
-                        security systems, criminal AFIS and the aforementioned AVL System.
+                        At NOA Investment &amp; International trade I worked on a smart-city project for Puerto Cortés, Honduras. It integrated and centralized software connecting CCTV cameras, security systems, criminal AFIS, and the AVL system.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>.NET</li>
                         <li>C#</li>
@@ -738,7 +643,7 @@
                     <div class="flex-media-logo"></div>
                     <div class="flex-title">
                         <h3>
-                            Full Stack Developer
+                            Full-Stack Developer
                             <small>CUSAT Paraguay S.A.</small>
                             <small>Jan 2004 - Jan 2007 · Asunción, Paraguay</small>
                         </h3>
@@ -750,7 +655,7 @@
                         Development of the fleet management web application, integration with diverse GPS units and
                         integration of Telecom SMS system for triangulation and location of vehicles.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>.NET</li>
                         <li>C#</li>
@@ -760,15 +665,15 @@
                         <li>PostgreSQL</li>
                     </ul>
                 </div>
-                <p><strong>Consultant roles</strong></p>
-                <p>Positions where contributed on a seasonal basis, part-time or hourly.</p>
+                <h3 class="subhead">Consulting</h3>
+                <p class="section-note">Seasonal, part-time, or hourly roles.</p>
                 <div class="flex-container">
                     <div class="flex-media-logo">
                         <img alt="tyk.io" src="./assets/img/tyk.jpg">
                     </div>
                     <div class="flex-title">
                         <h3>
-                            Senior Full Stack Developer
+                            Senior Full-Stack Developer
                             <small>Tyk.io</small>
                             <small>Apr 2022 - Aug 2022</small>
                         </h3>
@@ -777,10 +682,10 @@
                 <div class="content-left-offset">
                     <p>Project: Developer Portal (Backend processes) — <a rel="noreferrer" href="https://tyk.io/docs/tyk-developer-portal/" target="_blank">tyk.io/docs/tyk-developer-portal</a></p>
                     <ul>
-                        <li>Enhancing web portal to manage IdP (Identity Providers) and the tyk.io gateway interactions.</li>
-                        <li>Integrating microservices, 1st and 3rd party external services</li>
+                        <li>Improved the web portal that manages identity providers (IdP) and tyk.io gateway interactions.</li>
+                        <li>Integrated microservices and first- and third-party external services.</li>
                     </ul>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Go</li>
                         <li>HTML/CSS</li>
@@ -808,7 +713,7 @@
                         <li>Extending and maintaining the schemas of the system</li>
                         <li>Engaging on DevOps tasks, deployment and monitoring systems</li>
                     </ul>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>NodeJS</li>
                         <li>NestJS</li>
@@ -831,7 +736,7 @@
                         Technology Consultant developing backend services in Go, developing and extending current APIs
                         for services provided in the platform, specifically for AWS.
                     </p>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>Go</li>
                         <li>NATS</li>
@@ -855,10 +760,10 @@
                 <div class="content-left-offset">
                     <p>Past personal project: <a rel="noreferrer" href="https://loogistico.com" target="_blank">Loogistico</a></p>
                     <ul>
-                        <li>Loogistico is a door to door delivery and package handling company. Each of our delivery agents are trained to provide the best experience in each service.</li>
+                        <li>Loogistico is a door-to-door delivery and package-handling company. Each of our delivery agents is trained to provide the best experience on every service.</li>
                         <li>Technology Consultant in package management and door-to-door delivery application services and website.</li>
                     </ul>
-                    <p>Tech stack:</p>
+                    <p class="stack-label">Technologies</p>
                     <ul>
                         <li>PHP</li>
                         <li>Go</li>
@@ -878,20 +783,18 @@
                     <div class="flex-media-logo"></div>
                     <div class="flex-title">
                         <h3>
-                            Bachelor Degree in Computer System Analysis
+                            Bachelor's degree in Computer System Analysis
                             <small>Universidad Americana — Asunción, Paraguay</small>
                             <small>2019 - 2023</small>
                         </h3>
                     </div>
                 </div>
-                <div class="content-left-offset">
-                    <p><strong>Languages</strong></p>
-                    <ul>
-                        <li>English — Advanced</li>
-                        <li>Spanish — Native</li>
-                        <li>Portuguese — Basic</li>
-                    </ul>
-                </div>
+                <h3 class="subhead">Languages</h3>
+                <ul class="fact-list">
+                    <li>English — Advanced</li>
+                    <li>Spanish — Native</li>
+                    <li>Portuguese — Basic</li>
+                </ul>
             </div>
         </section>
         <section class="col-centered container" id="projects">
@@ -972,9 +875,7 @@
                 </div>
                 <div class="content-left-offset">
                     <p>
-                        A platform that organizes stock with QR codes storing their categories, geolocation data and may
-                        attachment files, such as manuals, pictures, schematics that can be used by Telco, Gas and water
-                        companies.
+                        A platform that organizes stock with QR codes. Each code stores categories, geolocation, and files such as manuals, pictures, and schematics for telecom, gas, and water companies.
                     </p>
                 </div>
                 <div class="flex-container">
@@ -993,14 +894,7 @@
                 </div>
                 <div class="content-left-offset">
                     <p>
-                        Checkpoint is best used to track and time check in’s and within
-                        those checks, you can have a set of specific activities previously
-                        loaded and leave notes on said activities you make. It’s generic
-                        enough to make medical visits, pre-sales, sales, technical
-                        repairs, etc. and, as one client is using it, to make a check,
-                        where the user is an trainer that can mark a training activity, and
-                        can input the list of people that he’s training and in which
-                        course/area the training is aiming.
+                        Checkpoint times check-ins and attaches a prepared set of activities and notes to each one. Teams use it for medical visits, pre-sales, sales, and technical repairs. A trainer can also record a training activity, the people in it, and the course or area.
                     </p>
                 </div>
                 <div class="flex-container">
@@ -1018,19 +912,13 @@
                 </div>
                 <div class="content-left-offset">
                     <p>
-                        Manage your GPS devices from the comfort of your smartphone! Do
-                        you have a GPS TK103 (also called GPS103-A/GPS103-B) or GPS ODBII
-                        (AutoGeneral OT08/GPS306A) installed on our vehicle or consider
-                        installing it and want to control it without paying monthly fees
-                        to a company for it? Here is the solution! GPSManager allows you
-                        to load data from your GPS and vehicle and control them with just
-                        fingertips and in an intuitively manner!
+                        Control a GPS from your phone without a monthly monitoring fee. GPSManager loads the device and vehicle data for a GPS TK103 (also called GPS103-A or GPS103-B) or a GPS OBD-II unit (AutoGeneral OT08 or GPS306A).
                     </p>
                 </div>
                 <div class="flex-container">
                     <div class="flex-media-logo">
-                        <a rel="noreferrer" href="https://github.com/cmelgarejo/go-gql-server" target="_blank">
-                            <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg"
+                        <a rel="noreferrer" href="https://github.com/cmelgarejo/go-gql-server" target="_blank" aria-label="A Go GQLServer">
+                            <svg aria-hidden="true" version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
                                 viewBox="0 0 401.98 559.472" enable-background="new 0 0 401.98 559.472"
                                 xml:space="preserve">
@@ -1134,31 +1022,22 @@
                 </div>
                 <div class="flex-container">
                     <div class="flex-media-logo">
-                        <a rel="noreferrer" href="https://github.com/cmelgarejo/go-gql-server" target="_blank">
-                            <img alt="go-gql-server"
-                                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+                        <a rel="noreferrer" href="https://github.com/cmelgarejo?tab=repositories" target="_blank">
+                            <img alt="GitHub" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
                         </a>
                     </div>
                     <div class="flex-title">
                         <h3>
-                            And many more projects!
-                            <small>Go, C#, Node.js, Elixir, etc...</small>
+                            <a rel="noreferrer" href="https://github.com/cmelgarejo?tab=repositories" target="_blank">More on GitHub</a>
+                            <small>Go, C#, Node.js, Elixir, and others</small>
                         </h3>
                     </div>
-                </div>
-                <div class="content-left-offset">
-                    <p>
-                        Feel free to browse through my <a rel="noreferrer"
-                            href="https://github.com/cmelgarejo?tab=repositories">Github
-                            repos!</a>
-                    </p>
                 </div>
             </div>
         </section>
         <section class="col-centered container" id="writing">
             <div class="col-full">
                 <h2>Writing</h2>
-                <p>These are the stories in tech I wrote so far:</p>
                 <div class="container card-container">
                     <a class="card" target="_blank" rel="noreferrer"
                         href="https://medium.com/@cmelgarejo.dev/creating-an-opinionated-gql-server-part1-8fad071e525f">
@@ -1199,6 +1078,7 @@
                 </div>
             </div>
         </section>
+        </div>
         </main>
         <footer class="col-full container">
             <div class="col-centered">
@@ -1210,7 +1090,7 @@
                     <a rel="noreferrer" href="https://www.freepik.com/" target="_blank">Freepik</a> from
                     <a rel="noreferrer" href="https://www.flaticon.com/" target="_blank">Flaticon</a>, as
                     well as
-                    <a rel="noreferrer" href="https://twitter.com/colebemis" target="_blank">Cole Blemis</a>
+                    <a rel="noreferrer" href="https://twitter.com/colebemis" target="_blank">Cole Bemis</a>
                     from <a rel="noreferrer" href="https://feathericons.com/" target="_blank">Feather</a>
                 </p>
             </div>
