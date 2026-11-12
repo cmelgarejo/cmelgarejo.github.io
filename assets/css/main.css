@@ -1318,6 +1318,23 @@ section li {
   object-fit: cover;
 }
 
+#certificates .card-container {
+  grid-template-columns: minmax(0, 40rem);
+  justify-content: start;
+}
+
+#certificates .container.card-container .card {
+  grid-column: 1 / -1;
+  max-width: none;
+}
+
+#certificates .card .media {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: var(--paper-bright);
+}
+
 .card:hover .media {
   filter: saturate(1);
   transform: scale(1.015);
